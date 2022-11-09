@@ -1,0 +1,23 @@
+﻿<Window x:Class="Vorlage_VL6.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Vorlage_VL6"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Closing="Window_Closing">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="253*"/>
+            <ColumnDefinition Width="540*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="BT_XBox_Start" Content="Lese XBox-Controller" HorizontalAlignment="Left" Margin="49.71,150,0,0" VerticalAlignment="Top" Width="160" Height="33" FontSize="16" Click="BT_XBox_Start_Click" Grid.Column="1"/>
+        <TextBox x:Name="TB_LeftTrigger" HorizontalAlignment="Left" Height="25" Margin="49.71,253,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="160" FontSize="16" Grid.Column="1"/>
+        <TextBox x:Name="TB_AnalogRY" HorizontalAlignment="Left" Height="25" Margin="49.71,294,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="160" FontSize="16" Grid.Column="1"/>
+        <TextBox x:Name="TB_ButtonA" HorizontalAlignment="Left" Height="25" Margin="49.71,335,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="160" FontSize="16" Grid.Column="1"/>
+        <Label Content="Linker Schultertrigger" HorizontalAlignment="Right" Margin="0,249,508.6,0" VerticalAlignment="Top" FontSize="16" Grid.ColumnSpan="2"/>
+        <Label Content="Rechter Analogstick Y-Wert" HorizontalAlignment="Right" Margin="0,290,508.6,0" VerticalAlignment="Top" FontSize="16" Grid.ColumnSpan="2"/>
+        <Label Content="A Button" HorizontalAlignment="Right" Margin="0,331,508.6,0" VerticalAlignment="Top" FontSize="16" Grid.ColumnSpan="2"/>
+
+    </Grid>
+</Window>
